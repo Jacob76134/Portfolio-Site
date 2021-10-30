@@ -11,13 +11,15 @@ a {
 }
 
 html {
-    max-width: 100%;
+    max-width: 100vw;
     overflow: none;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #000;
     font-family: Poppins, sans-serif;
+    padding-top: 25px;
 }
 
 /*NAV*/
@@ -182,7 +184,7 @@ nav label {
 
 .work-showcase a:nth-child(5){
     border-radius: 0 .5% .5% 0;
-   }
+}
 
 .panel {
     background-size: cover;
@@ -212,11 +214,19 @@ nav label {
 
 .panel.active h3 {
     opacity: 1;
-    transition: opacity 0.3s ease-in 0.5s;
+    transition: all ease-in 0.5s;
+}
+
+.panel.active:hover h3 {
+    color: white;
 }
 
 #horiseon {
     background:url( ../assets/img/horiseon.JPG);
+}
+
+#project-1{
+    background:url( ../assets/img/project-1.PNG);
 }
 
 #na {
