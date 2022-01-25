@@ -26,6 +26,10 @@ body {
     padding-top: 25px;
 }
 
+.gone {
+    display: none;
+}
+
 /*NAV*/
 
 nav {
@@ -186,6 +190,7 @@ nav label {
 
 .work-showcase {
     display:flex;
+    transition: all 500ms;
 }
 
 .work-showcase a:nth-child(1){
@@ -244,6 +249,10 @@ nav label {
     margin: auto;
 }
 
+#typing-warrior {
+    background:url(../assets/img/screenshot.JPG);
+}
+
 #weather-dashboard {
     background:url(../assets/img/weather.PNG);
 }
@@ -256,6 +265,13 @@ nav label {
     background:url( ../assets/img/project-1.PNG);
 }
 
+#wireframes {
+    background:url(../assets/img/mobilewire.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 #na {
     background:url( ../assets/img/na.png);
 }
@@ -263,13 +279,26 @@ nav label {
 /* INFO PANEL */
 .hover-info {
     background: #8624f0;
-    max-width: 300px;
+    width: 300px;
     top: 792.5px;
     position: absolute;
     height: 300px;
-    left: 0px;
+    left: 0;
     z-index: 1;
     border-radius: 0 3px 0 0;
+    transition: all 500ms;
+}
+
+.hover-info-left {
+    background: #8624f0;
+    width: 300px;
+    top: 792.5px;
+    position: absolute;
+    height: 300px;
+    left: 80%;
+    z-index: 1;
+    border-radius: 3px 3px 0 0;
+    transition: all ease-in 500ms;
 }
 
 .info-top {
@@ -288,6 +317,7 @@ nav label {
     letter-spacing: -.03em;
     color: rgb(245, 225, 255)
 }
+
 
 /*ABOUT ME*/
 
@@ -443,6 +473,7 @@ footer h3 {
 
     .hover-info {
         max-width: 603px;
+        width: auto;
         margin: 0;
         top: 900px;
     }
