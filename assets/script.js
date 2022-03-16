@@ -39,18 +39,18 @@ document.getElementById('typing-warrior').addEventListener('mouseover', () => {
 document.getElementById('weather-dashboard').addEventListener('mouseover', () => {
     hoverTitle.textContent = 'Weather Dashboard';
     gitLink.href = 'https://github.com/Jacob76134/Weather-Dashboard';
-    blurb.textContent = 'Definitely my favorite project to date. Using data from a weather API and displaying it in different ways is simply delightful';
-    hoverInfo.classList.add('hover-info')
-    hoverInfo.classList.remove('hover-info-left')
+    blurb.textContent = 'Using data from a weather API and displaying it in different ways is simply delightful';
+    hoverInfo.classList.add('hover-info-left')
+    hoverInfo.classList.remove('hover-info')
     // slideRight()
 })
 
-document.getElementById('cyclist').addEventListener('mouseover', () => {
-    hoverTitle.textContent = 'Cyclist';
-    gitLink.href = 'https://wl0194.github.io/Cyclist/';
-    blurb.textContent = 'One of the more challenging group projects as we had to pivot our development direction on short notice, very happy with the result';
-    hoverInfo.classList.add('hover-info-left')
-    hoverInfo.classList.remove('hover-info')
+document.getElementById('spacex').addEventListener('mouseover', () => {
+    hoverTitle.textContent = 'SpaceX Rockets';
+    gitLink.href = 'https://github.com/Jacob76134/SpaceX-Rockets';
+    blurb.textContent = 'Using React and GraphQL to render cards and modals from the SpaceX API. This project was a fun excuse to play around with some different libraries too';
+    hoverInfo.classList.add('hover-info')
+    hoverInfo.classList.remove('hover-info-left')
     // slideLeft()
 })
 
